@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: orbe-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: orbe
+      MYSQL_USER: orbe
+      MYSQL_PASSWORD: orbe_dev
+      MYSQL_ROOT_PASSWORD: root_dev
+    ports:
+      - "3307:3306"
+    volumes:
+      - orbe_mysql_data:/var/lib/mysql
+
+volumes:
+  orbe_mysql_data:

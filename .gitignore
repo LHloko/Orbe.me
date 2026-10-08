@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Expo
+.expo/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
